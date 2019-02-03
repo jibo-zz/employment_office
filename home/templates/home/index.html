@@ -1,0 +1,42 @@
+{% load static wagtailcore_tags %} 
+{% block content %}
+<div
+  class="hero-wrap js-fullheight"
+  style="background-image: url({% static 'img/bg_2.jpg' %});"
+  data-stellar-background-ratio="0.5"
+>
+  <div class="overlay"></div>
+  <div class="container">
+    <div
+      class="row no-gutters slider-text js-fullheight align-items-center justify-content-start"
+      data-scrollax-parent="true"
+    >
+      <div
+        class="col-xl-10 ftco-animate mb-4 pb-5"
+        data-scrollax=" properties: { translateY: '70%' }"
+      >
+        <div class="ftco-search">
+            <div class="row">
+                <div class="col1-sm-6 mr-md-2">
+                  <div class="card h-50">
+                    <img class="card-img-top" src="{% static 'img/job_openings.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                      <a href="{% slugurl 'post' %}" class="btn btn-primary">Employer</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col1-sm-6">
+                  <div class="card h-50">
+                    <img class="card-img-top" src="{% static 'img/post-resume.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                      <a href="{% slugurl 'resume' %}" class="btn btn-primary">Candidate</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

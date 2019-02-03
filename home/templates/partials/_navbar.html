@@ -1,0 +1,72 @@
+{% load static %}
+<nav
+  class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+  id="ftco-navbar"
+>
+  <div class="container">
+    <a class="navbar-brand" href="https://dpfza.gov.dj/">
+      <img src="{% static 'img/logo_dpfza.png' %}" width="100" height="110" alt="">
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#ftco-nav"
+      aria-controls="ftco-nav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="oi oi-menu"></span> Menu
+    </button>
+
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav ml-auto">
+        <!-- <li
+          {% if '/' == request.path %}
+            class="nav-item active"
+          {% else %}
+            class="nav-item"
+          {% endif %}
+        > -->
+        <!-- <li class="nav-item">
+          <a href="" class="nav-link">Home</a>
+        </li> -->
+        <!-- <li
+          {% if 'about' in request.path %}
+            class="nav-item active"
+          {% else %}
+            class="nav-item"
+          {% endif %} 
+        > -->
+        <!-- <li class="nav-item">
+          <a href="" class="nav-link">About</a>
+        </li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
+        <!-- <li 
+          {% if 'contact' in request.path %}
+            class="nav-item active"
+          {% else %}
+            class="nav-item"
+          {% endif %} 
+        > -->
+        <!-- <li class="nav-item">
+          <a href="" class="nav-link">Contact</a>
+        </li> -->
+        <!-- <li
+          {% if '/jobs/new-post' == request.path %}
+            class="nav-item cta mr-md-2 active"
+          {% else %}
+            class="nav-item cta mr-md-2"
+          {% endif %} 
+        > -->
+        <!-- <li class="nav-item cta mr-md-2">
+          <a href="" class="nav-link">Post a Job</a>
+        </li> -->
+        <li class="nav-item cta">
+          <a href="" class="nav-link"><h1>Employment Office</h1></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- END nav -->
